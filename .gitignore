@@ -1,0 +1,27 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*~
+
+# Image working files (大きいので必要に応じて LFS / 別管理を推奨)
+*.psd
+*.clip
+*.ai
+*.xcf
+*.kra
+*.tmp.png
+
+# Logs / temp
+*.log
+.tmp/
+.cache/
+
+# Node (将来サイト化したとき用)
+node_modules/
+dist/
+.next/
