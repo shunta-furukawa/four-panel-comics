@@ -46,3 +46,4 @@ flowchart LR
 ---
 
 各キャラの詳細プロフィールは [`../characters/`](../characters/) を参照。
+シリーズ全体の大外プロットは [`./storyline.md`](./storyline.md) を参照。

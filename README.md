@@ -43,6 +43,7 @@
 │   ├── world.md               ← 世界観・舞台「デジラボ」
 │   ├── concept.md             ← コアコンセプト・物語テーマ
 │   ├── relationships.md       ← 人間関係マップ
+│   ├── storyline.md           ← 大外プロット（シーズン制 + バグまる長期伏線）
 │   └── workflow.md            ← 制作フロー（ネタ → 公開まで）
 │
 ├── characters/                ← 登場キャラのプロフィール（1 ファイル 1 人）
