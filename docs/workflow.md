@@ -8,26 +8,32 @@
 - 公開の単位は「リリース単位」で考える。後述の 2 種類のいずれか
 - 整合性のチェックや壁打ち相手として Claude Code を常駐させる
 
+## 1 話のフォーマット
+
+**1 話 = 4 シート × 4 コマ = 全 16 コマ**。X 投稿時は `sheet-1.png 〜 sheet-4.png`
+の 4 枚画像で添付する。詳しいリズム設計は
+[`../design-system/rhythm.md`](../design-system/rhythm.md) を参照。
+
 ## リリース単位 (Release Unit)
 
 このシリーズには 2 つのリリースタイプを設ける。
 
-### A. テーマリリース（記事 + 関連 4 コマ N 本）
+### A. テーマリリース（記事 + 関連話 N 本）
 
-思想・テーマ系のネタはまず **Zenn 記事** に落とし、関連する 4 コマを 1〜数本
-セットで公開する。X / Zenn 両方で読み応えを担保するための単位。
+思想・テーマ系のネタはまず **Zenn 記事** に落とし、関連する 1 話 (16 コマ)
+を 1〜数本セットで公開する。X / Zenn 両方で読み応えを担保するための単位。
 
-- 記事 1 本を起点にし、紐付く comic を 1〜数本添える
+- 記事 1 本を起点にし、紐付くエピソードを 1〜数本添える
 - 主に `arc: main`（シーズン主筋）や `arc: bugmaru`（伏線回）の重い回を
   この単位で扱う
 - カデンス目安: 月 1〜2 本程度（無理なく出せる範囲で）
 
-### B. 単発リリース（4 コマのみ）
+### B. 単発リリース（1 話単独）
 
-`arc: standalone`（あるある日常 4 コマ）や軽い季節回はそのまま
-**4 コマ単独** で公開する。記事は付けない。
+`arc: standalone`（あるある日常）や軽い季節回はそのまま **1 話 (16 コマ) 単独**
+で公開する。記事は付けない。
 
-- カデンス目安: ストックから機会を見て出す。週 0〜数本、無理しない
+- カデンス目安: ストックから機会を見て出す。無理しない
 
 ## ネタ → 公開までのフロー
 
@@ -37,9 +43,9 @@ flowchart LR
     B --> C{リリース単位}
     C -- テーマ系 --> D1[articles/NNNN を起こす<br/>関連 episode を front matter で紐付け]
     C -- 単発 --> D2[episodes/NNNN を起こす]
-    D1 --> E[起承転結 / 本文を書く]
+    D1 --> E[4 シート × 4 コマ / 本文を書く]
     D2 --> E
-    E --> F[ネーム / 下書き<br/>assets/episodes/NNNN/]
+    E --> F[ネーム / 下書き<br/>assets/episodes/NNNN/sheet-1〜4.png]
     F --> G[清書 / 本番画像]
     G --> H[PR 作成<br/>セルフレビュー or AI レビュー]
     H --> I[main にマージ]
@@ -51,8 +57,8 @@ flowchart LR
 
 - すぐメモ → Issue を立てる（`idea` ラベル）
 - Issue 内に **どのリリース単位を想定しているか** を書く
-  - `kind: article-anchor` ＝ 記事 + 関連 4 コマで束ねる候補
-  - `kind: comic` ＝ 単発 4 コマ向け
+  - `kind: article-anchor` ＝ 記事 + 関連話で束ねる候補
+  - `kind: comic` ＝ 単発 1 話向け
 
 ## 2. リリース起こし
 
@@ -61,7 +67,7 @@ flowchart LR
 ```bash
 # 記事を起こす (Zenn 用)
 cp articles/_template.md articles/0007-naming-jigoku.md
-# 関連 4 コマを起こす (記事に紐づける数だけ)
+# 関連話を起こす (記事に紐づける数だけ。1 話 = 4 シート × 4 コマ)
 cp episodes/_template.md episodes/0042-naming-jigoku-1.md
 ```
 
@@ -80,14 +86,15 @@ related_episodes:
 cp episodes/_template.md episodes/0050-deploy-no-inori.md
 ```
 
-## 3. 起承転結 / 本文を書く
+## 3. 構成を書く
 
-- 4 コマ: `episodes/NNNN-slug.md` に起承転結
+- エピソード: `episodes/NNNN-slug.md` に **4 シート × 4 コマ** の全 16 コマを埋める
+  - シート全体で大きな起承転結、各シート内で小さな起承転結
 - 記事: `articles/NNNN-slug.md` に本文（謙虚なトーン推奨）
 
 ## 4. ネーム・下書き
 
-- `assets/episodes/NNNN/` に画像を置く（`panel-1.png` ... `panel-4.png` など）
+- `assets/episodes/NNNN/` に画像を置く（`sheet-1.png` ... `sheet-4.png` の 4 枚）
 - エピソード Markdown 本文からリンクして見せる
 
 ## 5. レビュー
@@ -119,7 +126,7 @@ cp episodes/_template.md episodes/0050-deploy-no-inori.md
 | ------------------- | ---------------------------------------- |
 | `idea`              | バックログにある段階のネタ               |
 | `kind:article`      | 記事系のネタ（article-anchor 候補）       |
-| `kind:comic`        | 単発 4 コマ向けネタ                       |
+| `kind:comic`        | 単発 1 話向けネタ                         |
 | `episode`           | エピソード化された案件                    |
 | `article`           | 記事化された案件                          |
 | `character-update`  | キャラ設定の追加・変更                    |
