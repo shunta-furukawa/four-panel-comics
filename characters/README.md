@@ -1,12 +1,16 @@
 # 登場キャラクター
 
-| ID         | 名前       | 役割              | プロフィール                         |
-| ---------- | ---------- | ----------------- | ------------------------------------ |
-| `shunta`   | Shunta     | 主人公            | [shunta.md](./shunta.md)             |
-| `iris`     | アイリス   | AI アシスタント   | [iris.md](./iris.md)                 |
-| `mika`     | ミカ       | デザイナー        | [mika.md](./mika.md)                 |
-| `takuma`   | タクマ     | プロデューサー    | [takuma.md](./takuma.md)             |
-| `bugmaru`  | バグまる   | バグの化身        | [bugmaru.md](./bugmaru.md)           |
+| ID         | 名前         | 役割                                  | プロフィール                         |
+| ---------- | ------------ | ------------------------------------- | ------------------------------------ |
+| `shunta`   | Shunta       | 主宰 / エンジニア                      | [shunta.md](./shunta.md)             |
+| `mika`     | ミカ         | デザイナー                             | [mika.md](./mika.md)                 |
+| `takuma`   | タクマ       | プロデューサー                         | [takuma.md](./takuma.md)             |
+| `chappy`   | チャッピー君 | AI アシスタント (ChatGPT / Codex 系) | [chappy.md](./chappy.md)             |
+| `claude`   | クロード君   | AI アシスタント (Claude 系)            | [claude.md](./claude.md)             |
+| `geminai`  | ジェミナイ君 | AI アシスタント (Gemini 系)            | [geminai.md](./geminai.md)           |
+| `bugmaru`  | バグまる     | バグの化身                             | [bugmaru.md](./bugmaru.md)           |
+
+> 各キャラがどういう経緯でデジラボに参画したかは [`../docs/origin.md`](../docs/origin.md) を参照。
 
 ## キャラファイルの書き方ルール
 
