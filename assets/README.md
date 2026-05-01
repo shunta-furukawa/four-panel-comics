@@ -16,14 +16,17 @@ assets/
 │
 ├── episodes/     ← 各話のネーム / 完成画像
 │   └── NNNN/     ← episodes/NNNN-*.md と対応
-│       ├── panel-1.png
-│       ├── panel-2.png
-│       ├── panel-3.png
-│       ├── panel-4.png
-│       └── final.png   ← SNS 投稿用 4 コマまとめ
+│       ├── sheet-1.png   ← シート 1（起）
+│       ├── sheet-2.png   ← シート 2（承）
+│       ├── sheet-3.png   ← シート 3（転）
+│       ├── sheet-4.png   ← シート 4（結）
+│       └── final.png     ← 任意。全シート結合版
 │
 └── concept/      ← コンセプトボード・参考画像・ムードボード
 ```
+
+> 1 話 = 4 シート × 4 コマ = 全 16 コマ。
+> X 投稿時は `sheet-1.png` 〜 `sheet-4.png` を 4 枚添付する。
 
 ## ファイル形式
 
@@ -34,5 +37,5 @@ assets/
 ## 命名規則
 
 - 小文字 + ハイフン
-- 用途を明示: `panel-1.png`, `final.png`, `pose-smile.png` など
-- 連番には zero-pad（`panel-01.png` ではなく `panel-1.png` で OK、4 コマなので桁が増えない）
+- 用途を明示: `sheet-1.png`, `final.png`, `pose-smile.png` など
+- 連番は zero-pad なし（`sheet-1.png` で OK）

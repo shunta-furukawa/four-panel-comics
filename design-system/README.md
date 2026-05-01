@@ -7,7 +7,7 @@
 | [`color-palette.md`](./color-palette.md)       | カラーパレット                          |
 | [`shapes-and-lines.md`](./shapes-and-lines.md) | シェイプ・ライン（角丸 / アウトライン） |
 | [`motifs.md`](./motifs.md)                     | よく出てくるモチーフ                    |
-| [`rhythm.md`](./rhythm.md)                     | 4 コマのリズム設計（起承転結）          |
+| [`rhythm.md`](./rhythm.md)                     | リズム設計（4 シート × 4 コマ）         |
 
 ## 全体方針
 

@@ -18,9 +18,9 @@
 
 ### エピソード関連の場合
 - [ ] front matter（id / title / status / tags / characters / created）が埋まっている
-- [ ] 起承転結の各コマにセリフが入っている
+- [ ] 4 シート × 4 コマ（全 16 コマ）が埋まっている
 - [ ] 投稿前チェックリスト（design-system/rhythm.md）を通している
-- [ ] 関連画像を assets/episodes/NNNN/ に配置した
+- [ ] 関連画像を assets/episodes/NNNN/sheet-1〜4.png に配置した
 
 ### キャラ・設定関連の場合
 - [ ] 既存エピソードとの矛盾がないか確認した
