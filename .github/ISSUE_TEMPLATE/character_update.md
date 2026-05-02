@@ -8,7 +8,7 @@ assignees: []
 
 ## 対象キャラ
 
-<!-- 例: shunta / mika / takuma / chappy / claude / geminai / bugmaru / (新キャラ) -->
+<!-- 例: shunta / iris / mika / takuma / bugmaru / (新キャラ) -->
 
 ## 変更前 / 変更後
 

@@ -9,11 +9,9 @@
 assets/
 ├── characters/   ← キャラごとの立ち絵・アイコン・表情差分
 │   ├── shunta/
+│   ├── iris/
 │   ├── mika/
 │   ├── takuma/
-│   ├── chappy/
-│   ├── claude/
-│   ├── geminai/
 │   └── bugmaru/
 │
 ├── episodes/     ← 各話のネーム / 完成画像
