@@ -11,7 +11,7 @@ post_urls:
   x:
   zenn:
   instagram:
-related_article: 0002-ai-gateway-future
+related_article: 0001-ai-gateway-future
 ---
 
 # AI ゲートウェイ、いずれ来る？
@@ -165,7 +165,7 @@ related_article: 0002-ai-gateway-future
 - season: S1 / arc: standalone（思考実験 + 締切オチの組み合わせ）
 - 主題: M2M 通信における生成 AI の **完全自走の自己改善ループ** を成立させるために、コンポーネント間の互換性維持を AI ゲートウェイが担うアーキテクチャがいずれ生まれるかも、という思考実験
 - 「既存コードに AI を当てたら整合がズレる」のは現場フックの導入。本論は「個別進化 vs 互換性維持」のトレードオフを AI ゲートウェイで解く話
-- テーマリリース構成: Zenn 記事 [`articles/0002-ai-gateway-future.md`](../articles/0002-ai-gateway-future.md) と同時公開する
+- テーマリリース構成: Zenn 記事 [`articles/0001-ai-gateway-future.md`](../articles/0001-ai-gateway-future.md) と同時公開する
 
 ---
 
