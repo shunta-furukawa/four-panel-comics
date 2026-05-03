@@ -131,3 +131,16 @@ related_article:        # 関連記事 (テーマリリースの場合のみ)
 ## メモ・ボツ案
 
 - （描いている途中で出たアイデア・別案などを残しておく）
+
+---
+
+## 画像生成プロンプト（任意 / ChatGPT 用）
+
+ChatGPT などで画像生成する場合は、以下のお約束を必ず守ってプロンプトを書く:
+
+- リズム設計: [`../design-system/rhythm.md`](../design-system/rhythm.md)
+- 吹き出し / セリフのルール: [`../design-system/speech-bubbles.md`](../design-system/speech-bubbles.md)
+  - 各パネルの仕様は `話者:` ＋ `吹き出し:` ＋ `キャラ名タグ:` の形式で書く
+  - `Shunta「セリフ」` のような書き方は **避ける**（ChatGPT が `Shunta「」` ごと描いてしまう）
+
+参考: 第 1 話 `0001-ai-gateway-dream.md` の末尾セクション。
