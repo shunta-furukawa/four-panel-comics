@@ -11,7 +11,7 @@ post_urls:
   x:
   zenn:
   instagram:
-related_article:
+related_article: 0002-ai-gateway-future
 ---
 
 # AI ゲートウェイ、いずれ来る？
@@ -164,7 +164,7 @@ related_article:
 - season: S1 / arc: standalone（思考実験 + 締切オチの組み合わせ）
 - 由来: 既存コードベースに生成 AI を当てたときの整合性問題と、
   将来的に "曖昧通信を捌く AI ゲートウェイ" が立つ未来の妄想
-- テーマリリース候補: Zenn 記事「既存コードと生成 AI の整合性 / AI ゲートウェイの未来」と紐付けると刺さりが強い
+- テーマリリース構成: Zenn 記事 [`articles/0002-ai-gateway-future.md`](../articles/0002-ai-gateway-future.md) と同時公開する
 - ボツ案: シート 4 でバグまるが画面の隅にいる伏線版も検討
 
 ---
